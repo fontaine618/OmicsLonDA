@@ -23,7 +23,7 @@
 #' of the tested feature, and the original input data.
 #' @importFrom SummarizedExperiment colData assay SummarizedExperiment
 #' @importFrom methods is
-#' @importFrom BiocGenerics rowSums colSums rowMeans colMeans
+#' @importFrom matrix rowSums colSums rowMeans colMeans
 #' @import BiocParallel
 #' @importFrom stats p.adjust
 #' @import zoo
