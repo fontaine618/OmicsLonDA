@@ -25,7 +25,8 @@ Imports:
     stats,
     utils,
     methods,
-    BiocGenerics
+    BiocGenerics,
+    matrix
 Suggests:
     knitr,
     rmarkdown,
