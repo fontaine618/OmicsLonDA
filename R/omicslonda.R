@@ -53,10 +53,10 @@ omicslonda = function(se_object = NULL, n.perm = 500,
 {
     message("Start OmicsLonDA")
     
-    rowSums <- BiocGenerics::rowSums
-    colSums <- BiocGenerics::colSums
-    rowMeans <- BiocGenerics::rowMeans
-    colMeans <- BiocGenerics::colMeans
+    rowSums <- matrix::rowSums
+    colSums <- matrix::colSums
+    rowMeans <- matrix::rowMeans
+    colMeans <- matrix::colMeans
     
     ### validate se_object
     stopifnot(is(se_object, "SummarizedExperiment"))
