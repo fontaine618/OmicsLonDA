@@ -23,7 +23,6 @@
 #' of the tested feature, and the original input data.
 #' @importFrom SummarizedExperiment colData assay SummarizedExperiment
 #' @importFrom methods is
-#' @importFrom matrix rowSums colSums rowMeans colMeans
 #' @import BiocParallel
 #' @importFrom stats p.adjust
 #' @import zoo
@@ -52,11 +51,6 @@ omicslonda = function(se_object = NULL, n.perm = 500,
                         col = c("blue", "firebrick"), prefix = "Test")
 {
     message("Start OmicsLonDA")
-    
-    rowSums <- matrix::rowSums
-    colSums <- matrix::colSums
-    rowMeans <- matrix::rowMeans
-    colMeans <- matrix::colMeans
     
     ### validate se_object
     stopifnot(is(se_object, "SummarizedExperiment"))
